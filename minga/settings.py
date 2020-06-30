@@ -161,7 +161,7 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "BIC" : "-",
             "NAME" : "Alternative Bank",
             "ESR" : ""}
-INFO_EMAIL = "info@minga.ch"
+INFO_EMAIL = "web@minga.ch"
 SERVER_URL = "www.minga.ch"
 ADMINPORTAL_NAME = "myminga.minga.ch"
 ADMINPORTAL_SERVER_URL = "myminga.minga.ch"
