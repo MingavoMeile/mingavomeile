@@ -155,14 +155,14 @@ ORGANISATION_ADDRESS = {"name":"Genossenschaft Minga vo Meile",
             "number" : "133",
             "zip" : "8706",
             "city" : "Meilen",
-            "extra" : "Minga c/o Christoph Sikora"}
+            "extra" : "c/o Christoph Sikora"}
 ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "IBAN" : "CH76 0839 0034 2220 1000 3",
             "BIC" : "-",
             "NAME" : "Alternative Bank",
             "ESR" : ""}
 INFO_EMAIL = "info@minga.ch"
-SERVER_URL = "www.minga.org"
+SERVER_URL = "www.minga.ch"
 ADMINPORTAL_NAME = "myminga.minga.ch"
 ADMINPORTAL_SERVER_URL = "myminga.minga.ch"
 SHARE_PRICE = "600"
