@@ -168,3 +168,7 @@ ADMINPORTAL_NAME = "myminga.minga.ch"
 ADMINPORTAL_SERVER_URL = "myminga.minga.ch"
 SHARE_PRICE = "600"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+
+ADMINS = (
+    ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
+)
