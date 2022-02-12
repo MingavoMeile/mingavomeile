@@ -176,6 +176,10 @@ FAVICON = "/static/img/favicon.ico"
 ENABLE_REGISTRATION = False
 BYLAWS = "/static/Statuten_Genossenschaft_Minga_vo_Meile_20190504.pdf"
 
+BUSINESS_YEAR_CANCELATION_MONTH = 12
+MEMBERSHIP_END_MONTH = 4
+BUSINESS_YEAR_START = {"day":1, "month":5}
+
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
 )
