@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'adminsortable2',
     'minga',
+    'polymorphic',
 ]
 
 ROOT_URLCONF = 'minga.urls'
@@ -112,6 +113,8 @@ EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'		
+
 WHITELIST_EMAILS = []
 
 def whitelist_email_from_env(var_env_name):
@@ -168,6 +171,7 @@ INFO_EMAIL = "garten@minga.ch"
 SERVER_URL = "minga.ch"
 SHARE_PRICE = "600"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+STYLES = {'static': ['/static/css/minga.css']}	
 
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
