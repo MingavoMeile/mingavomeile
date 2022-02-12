@@ -174,6 +174,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 STYLES = {'static': ['/static/css/minga.css']}	
 FAVICON = "/static/img/favicon.ico"
 ENABLE_REGISTRATION = False
+BYLAWS = "/static/Statuten_Genossenschaft_Minga_vo_Meile_20190504.pdf"
 
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
