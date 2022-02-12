@@ -113,7 +113,7 @@ EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'		
+#STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'		
 
 WHITELIST_EMAILS = []
 
