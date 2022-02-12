@@ -99,7 +99,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'impersonate.middleware.ImpersonateMiddleware'
+    'impersonate.middleware.ImpersonateMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -165,8 +166,6 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "ESR" : ""}
 INFO_EMAIL = "garten@minga.ch"
 SERVER_URL = "minga.ch"
-ADMINPORTAL_NAME = "myminga.minga.ch"
-ADMINPORTAL_SERVER_URL = "myminga.minga.ch"
 SHARE_PRICE = "600"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
