@@ -173,6 +173,8 @@ SHARE_PRICE = "600"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 STYLES = {'static': ['/static/css/minga.css']}	
 
+FAVICON = "/static/img/favicon.ico"
+
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
 )
