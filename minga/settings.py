@@ -185,7 +185,9 @@ ADMINS = (
 )
 
 FROM_FILTER = {
-    'filter_expression': r'noreply@minga\.ch',
-    'replacement_from': 'noreply@minga.ch'
+    'filter_expression': r'*@minga\.ch',
+    'replacement_from': 'web@minga.ch'
 }
+
+DEFAULT_FROM_EMAIL = 'web@minga.ch'
 
