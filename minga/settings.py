@@ -183,3 +183,9 @@ BUSINESS_YEAR_START = {"day":1, "month":5}
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
 )
+
+FROM_FILTER = {
+    'filter_expression': r'noreply@minga\.ch',
+    'replacement_from': 'noreply@minga.ch'
+}
+
