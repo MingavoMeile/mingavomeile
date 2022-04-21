@@ -185,7 +185,7 @@ ADMINS = (
 )
 
 FROM_FILTER = {
-    'filter_expression': r'*@minga\.ch',
+    'filter_expression': '.*@minga\.ch',
     'replacement_from': 'web@minga.ch'
 }
 
