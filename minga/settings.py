@@ -191,3 +191,4 @@ FROM_FILTER = {
 
 DEFAULT_FROM_EMAIL = 'web@minga.ch'
 
+DEFAULT_MAILER = 'juntagrico.util.mailer.batch.Mailer'
