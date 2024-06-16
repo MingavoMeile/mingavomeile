@@ -27,11 +27,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'minga',
     'juntagrico',
+    'fontawesomefree',
+    'import_export',    
     'impersonate',
     'crispy_forms',
-    'adminsortable2',
-    'minga',
+    'adminsortable2',    
     'polymorphic',
 ]
 
@@ -115,6 +117,8 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 #STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
+
 WHITELIST_EMAILS = []
 
 def whitelist_email_from_env(var_env_name):
@@ -137,7 +141,7 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+LOGIN_REDIRECT_URL = "/"
 
 """
     File & Storage Settings
@@ -167,8 +171,17 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "-",
             "BIC" : "-",
             "NAME" : "Alternative Bank",
             "ESR" : ""}
-INFO_EMAIL = "garten@minga.ch"
-SERVER_URL = "minga.ch"
+CONTACTS = {
+    'general': "garten@minga.ch",
+    'for_members': "garten@minga.ch",
+    'for_subscription': "info@minga.ch",
+    'for_shares': "info@minga.ch",
+    'technical': "web@minga.ch",
+}
+ORGANISATION_WEBSITE = {
+    'name': "www.minga.ch",
+    'url': "https://minga.ch"
+}
 SHARE_PRICE = "600"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 STYLES = {'static': ['/css/minga.css']}	
