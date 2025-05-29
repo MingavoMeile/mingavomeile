@@ -63,6 +63,7 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.template.context_processors.request',
                 'django.contrib.messages.context_processors.messages',
+                'juntagrico.context_processors.vocabulary',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -192,6 +193,9 @@ BYLAWS = "/static/Statuten_Genossenschaft_Minga_vo_Meile_20190504.pdf"
 BUSINESS_YEAR_CANCELATION_MONTH = 12
 MEMBERSHIP_END_MONTH = 4
 BUSINESS_YEAR_START = {"day":1, "month":5}
+
+# für 1.7.x ergänzt: Mail an Hof wenn für Job angemeldet
+ENABLE_NOTIFICATIONS = ['job_subscribed']
 
 ADMINS = (
     ('Admin', os.environ.get('CUSTOM_ADMIN_EMAIL')),
